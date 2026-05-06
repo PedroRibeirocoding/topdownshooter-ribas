@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dwqe5krrin2gs"]
+
+[ext_resource type="Texture2D" uid="uid://cg56h6oi33d56" path="res://assets/Content/Tileset with cell size 256x256.png" id="1_8dnef"]
+[ext_resource type="PackedScene" uid="uid://bxbmltr1pqn8g" path="res://scenes/jogador.tscn" id="2_ugoy3"]
+
+[node name="fase 1" type="Node2D" unique_id=1970803991]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2147097653]
+position = Vector2(571.25, 326.25)
+scale = Vector2(2.2869823, 1.2721021)
+texture = ExtResource("1_8dnef")
+region_enabled = true
+region_rect = Rect2(0, 0, 507, 509.06244)
+
+[node name="CharacterBody2D" parent="." unique_id=713918170 instance=ExtResource("2_ugoy3")]
+scale = Vector2(0.3, 0.3)

@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://bxbmltr1pqn8g"]
+
+[ext_resource type="Script" uid="uid://5e7b4ey04lje" path="res://scripts/jogador.gd" id="1_g1ob3"]
+[ext_resource type="Texture2D" uid="uid://dbj1pvy7fqcqb" path="res://assets/Content/Skins.png" id="1_vwxko"]
+[ext_resource type="Texture2D" uid="uid://cehv6yb1117j4" path="res://assets/Content/Weapons.png" id="2_uahlj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vwxko"]
+radius = 160.15305
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=713918170]
+script = ExtResource("1_g1ob3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1293653699]
+position = Vector2(59, -8)
+shape = SubResource("CircleShape2D_vwxko")
+
+[node name="sprite" type="Node2D" parent="." unique_id=358292630]
+rotation = 1.5707964
+
+[node name="torso" type="Sprite2D" parent="sprite" unique_id=18809723]
+texture = ExtResource("1_vwxko")
+region_enabled = true
+region_rect = Rect2(1959.842, 1204.536, 217, 145)
+metadata/_edit_lock_ = true
+
+[node name="bracodir" type="Sprite2D" parent="sprite" unique_id=1753114164]
+position = Vector2(81, -81)
+rotation = 2.8820288
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("1_vwxko")
+region_enabled = true
+region_rect = Rect2(2415.112, 1214.198, 117, 207)
+metadata/_edit_lock_ = true
+
+[node name="arma" type="Sprite2D" parent="sprite" unique_id=534842933]
+position = Vector2(5, -189)
+rotation = -3.1415925
+texture = ExtResource("2_uahlj")
+region_enabled = true
+region_rect = Rect2(1113, 459, 68, 336)
+metadata/_edit_lock_ = true
+
+[node name="bracoesq" type="Sprite2D" parent="sprite" unique_id=2076335377]
+position = Vector2(-82, -84)
+rotation = -3.1415925
+texture = ExtResource("1_vwxko")
+region_enabled = true
+region_rect = Rect2(2598.186, 1197.448, 140, 255)
+metadata/_edit_lock_ = true
+
+[node name="cabeca" type="Sprite2D" parent="sprite" unique_id=1308080265]
+position = Vector2(-2, -34)
+texture = ExtResource("1_vwxko")
+region_enabled = true
+region_rect = Rect2(261.77335, 829.7737, 176.66666, 174.37201)
+metadata/_edit_lock_ = true
